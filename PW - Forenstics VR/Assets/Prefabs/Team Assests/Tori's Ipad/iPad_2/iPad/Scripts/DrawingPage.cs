@@ -25,7 +25,7 @@ public class DrawingPage : MonoBehaviour
         if(isActive == true)
         {
             RaycastHit hit;
-            if (Physics.Raycast(rayCastPoint.transform.position, rayCastPoint.transform.forward, out hit, 100))
+            if (Physics.Raycast(rayCastPoint.transform.position, rayCastPoint.transform.forward, out hit, 100, drawingPad))
             {
                 Instantiate(Brush);
                 Quaternion activePointRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);

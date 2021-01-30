@@ -102,7 +102,7 @@ public class VRMeasuringTape : MonoBehaviour
                     ToggleActivePointObject();
                 }
 
-                if (!objectToggle)
+                else
                 {
                     activeObject = startPoint;
                     moveWRay = true;
@@ -154,7 +154,7 @@ public class VRMeasuringTape : MonoBehaviour
         {
             objectToggle = false;
         }
-        if (!objectToggle)
+        else
         {
             objectToggle = true;
         }
